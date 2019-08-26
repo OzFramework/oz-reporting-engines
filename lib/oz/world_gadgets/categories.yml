@@ -1,0 +1,405 @@
+- id: 10
+  broad_category: Timeout
+  category: Generic Timeout
+  color: E48743
+  regex: timed out after \d+ seconds
+- id: 11
+  broad_category: Timeout
+  category: Rest client
+  color: E48743
+  regex: Timeout RestClient::RequestTimeout
+- id: 12
+  broad_category: Timeout
+  category: Timeout Error
+  color: E48743
+  regex: Timeout exception raised while waiting
+- id: 13
+  broad_category: Timeout
+  category: Timeout Error
+  color: E48743
+  regex: Timeout::Error
+- id: 14
+  broad_category: Timeout
+  category: Timeout Error
+  color: E48743
+  regex: The timeout period elapsed prior to completion of the operation or the server
+    is not responding
+- id: 15
+  broad_category: Timeout
+  category: Moving to next page
+  color: E48743
+  regex: Timeout while waiting
+- id: 16
+  broad_category: Timeout
+  category: Watir::wait
+  color: E48743
+  regex: Watir::Wait::TimeoutError
+- id: 22
+  broad_category: System failed to meet test expectation
+  category: Expectation not met
+  color: A84A5C
+  regex: expected.*got|evaluated to false|ExpectationNotMetError
+- id: 25
+  broad_category: Inconclusive
+  category: Unable to Locate Element error
+  color: FFFF00
+  regex: 'Unable to locate element.*using '
+- id: 26
+  broad_category: Inconclusive
+  category: Unable to Locate Element error
+  color: FFFF00
+  regex: Element .* was not found
+- id: 27
+  broad_category: Inconclusive
+  category: Unable to Locate Element error
+  color: A84A5C
+  regex: field \w+ is not visible and cannot be entered
+- id: 29
+  broad_category: System failed to meet test expectation
+  category: Unable to find text on page
+  color: A84A5C
+  regex: The text .* was .* on the page
+- id: 30
+  broad_category: System failed to meet test expectation
+  category: true/false expectation not met
+  color: A84A5C
+  regex: 'expected: (true|false).*got: (false|true)'
+- id: 31
+  broad_category: System failed to meet test expectation
+  category: Access Is Denied server error 403
+  color: A84A5C
+  regex: 403-Forbidden.AccessIsDenied.Page
+- id: 35
+  broad_category: System failed to meet test expectation
+  category: field was disabled and could not be entered
+  color: A84A5C
+  regex: Element is not currently interactable|field \w+ is disabled and cannot be
+    entered
+- id: 44
+  broad_category: System failed to meet test expectation
+  category: Missing message
+  color: A84A5C
+  regex: The message.*was not found
+- id: 45
+  broad_category: System failed to meet test expectation
+  category: List contents wrong
+  color: A84A5C
+  regex: expected collection contained
+- id: 49
+  broad_category: System failed to meet test expectation
+  category: Control unexpectedly present
+  color: A84A5C
+  regex: expected present? to return false
+- id: 50
+  broad_category: System failed to meet test expectation
+  category: Control unexpectedly missing
+  color: A84A5C
+  regex: expected present? to return true
+- id: 55
+  broad_category: System failed to meet test expectation
+  category: API Status Error
+  color: A84A5C
+  regex: Invalid response code from API
+- id: 56
+  broad_category: Issue with Test Script
+  category: Regexp into String
+  color: E44D2E
+  regex: convert Regexp into String
+- id: 58
+  broad_category: Issue with Test Script
+  category: readyState error
+  color: E44D2E
+  regex: readyState
+- id: 65
+  broad_category: Issue with Test Script
+  category: Undefined Method
+  color: E44D2E
+  regex: undefined method|unknown property or method|NoMethodError
+- id: 66
+  broad_category: Issue with Test Script
+  category: Not a symbol error
+  color: E44D2E
+  regex: is not a symbol TypeError
+- id: 67
+  broad_category: Issue with Test Script
+  category: Invalid private method call
+  color: E44D2E
+  regex: private method.*called
+- id: 72
+  broad_category: Issue with Test Script
+  category: Missing option from select list
+  color: E44D2E
+  regex: No option with|NoValueFoundException
+- id: 73
+  broad_category: Issue with Test Script
+  category: Missing option from select list
+  color: E44D2E
+  regex: nil can be only String, Regexp or Numeric
+- id: 74
+  broad_category: Issue with Test Script
+  category: Disabled control
+  color: E44D2E
+  regex: is disabled
+- id: 75
+  broad_category: Issue with Test Script
+  category: Missing/disabled control
+  color: E44D2E
+  regex: Element is not currently visible and may not be manipulated|not present or
+    disabled|Unable to locate|Watir::Exception::UnknownObjectException|Element must
+    be displayed to click
+- id: 76
+  broad_category: Issue with Test Script
+  category: Unable to locate frame
+  color: E44D2E
+  regex: unable to locate frame
+- id: 77
+  broad_category: Issue with Test Script
+  category: Document window not found or had error
+  color: E48743
+  regex: Document window not found or had error
+- id: 78
+  broad_category: Issue with Test Script
+  category: Broken test code
+  color: E48743
+  regex: wrong number of arguments
+- id: 79
+  broad_category: Issue with Test Script
+  category: Missing debug tools
+  color: E48743
+  regex: Debug tools are not available
+- id: 85
+  broad_category: Issue with Test Script
+  category: Could not set field
+  color: E44D2E
+  regex: Failed setting the \w+ field to
+- id: 86
+  broad_category: Issue with Test Script
+  category: Could not set field
+  color: E44D2E
+  regex: Failed to correctly set a field
+- id: 88
+  broad_category: Issue with Test Script
+  category: FrameAccessDeniedException
+  color: E44D2E
+  regex: FrameAccessDeniedException
+- id: 89
+  broad_category: Environmental
+  category: Could not display webpage error
+  color: 9E3B33
+  regex: display webpage. RuntimeError
+- id: 91
+  broad_category: Environmental
+  category: Server Down, Refused Connection
+  color: 9E3B33
+  regex: No connection could be made because the target machine actively refused it
+- id: 97
+  broad_category: Browser
+  category: Stale element
+  color: E48743
+  regex: stale element reference
+- id: 101
+  broad_category: Element Issue
+  category: Element not Active
+  color: 9E3B33
+  regex: Element.*being accessed when not active!!
+- id: 178
+  broad_category: Timeout
+  category: Execution expired
+  color: E48743
+  regex: execution expired Timeout
+- id: 179
+  broad_category: Timeout
+  category: rbuf_fil
+  color: E48743
+  regex: rbuf_fil
+- id: 180
+  broad_category: API
+  category: 'API: did not return good status code.'
+  color: 3B20C2
+  regex: API.*did not return good status code
+- id: 181
+  broad_category: API
+  category: 'API: Invalid Response'
+  color: 3B20C2
+  regex: Invalid response code from API
+- id: 188
+  broad_category: Environmental
+  category: Browser died during test
+  color: CFFF94
+  regex: The RPC server is unavailable. NoMethodError
+- id: 189
+  broad_category: Inconclusive
+  category: Unable to Locate Element error
+  color: A84A5C
+  regex: or of a type that does not accept the focus
+- id: 190
+  broad_category: System failed to meet test expectation
+  category: Server Error (Object Reference Not Set To An Instance Of An Object error)
+  color: A84A5C
+  regex: ObjectReferenceNotSetToAnInstanceOfAnObject|Object reference not set to an
+    instance of an object
+- id: 191
+  broad_category: System failed to meet test expectation
+  category: Missing select list option text
+  color: A84A5C
+  regex: No option with :text of \".*\" in this select element
+- id: 208
+  broad_category: Environmental
+  category: chrome not reachable
+  color: 9e3b33
+  regex: chrome not reachable
+- id: 209
+  broad_category: Environmental
+  category: session deleted because of page crash
+  color: 9e3b33
+  regex: session deleted because of page crash
+- id: 211
+  broad_category: Issue with Test Script
+  category: Undefined step in scenario
+  color: e44d2e
+  regex: Undefined step
+- id: 212
+  broad_category: Timeout
+  category: API Timeout
+  color: 3b20a2
+  regex: Request Timeout
+- id: 215
+  broad_category: Environmental
+  category: SSL Error
+  color: e48743
+  regex: SSL_connect
+- id: 218
+  broad_category: Enviromental
+  category: Could not find file
+  color: 9e3b33
+  regex: 'Could not find file '
+- id: 234
+  broad_category: Inconclusive
+  category: Unable to Locate Element
+  color: FFFF00
+  regex: unable to locate element
+- id: 239
+  broad_category: System failed to meet test expectation
+  category: Unable to find text on page
+  color: 9e3b33
+  regex: browser text should include
+- id: 241
+  broad_category: System failed to meet test expectation
+  category: 'Expected value not found '
+  color: 9e3b33
+  regex: expected.*to include
+- id: 242
+  broad_category: File Error
+  category: Missing File
+  color: 9e3b33
+  regex: No such file or directory
+- id: 243
+  broad_category: Issue with Test Script
+  category: nil
+  color: 9e3b33
+  regex: no implicit conversion from nil
+- id: 247
+  broad_category: System failed to meet test expectation
+  category: Message not found
+  color: 9e3b33
+  regex: Message.*not found
+- id: 248
+  broad_category: Issue with Test Script
+  category: Wrong Constant Name
+  color: 9e3b33
+  regex: wrong constant name
+- id: 256
+  broad_category: Browser
+  category: Nil Browser
+  color: ''
+  regex: 'Unable to pick a platform for the provided browser or element: nil.'
+- id: 257
+  broad_category: Browser
+  category: nil browser
+  color: ''
+  regex: Unable to pick a platform for the provided browser or element
+- id: 258
+  broad_category: Element Issue
+  category: Element not on the page
+  color: ''
+  regex: Element.*in data set does not exist on the page.*
+- id: 259
+  broad_category: Network Issues
+  category: Timeout
+  color: ''
+  regex: ReadTimeout
+- id: 260
+  broad_category: Routing Problem
+  category: Applicaton on wrong page
+  color: ''
+  regex: The Application is on the wrong page!.*
+- id: 261
+  broad_category: Timeout
+  category: Waiting for element
+  color: ''
+  regex: timed out after.*seconds, waiting for.*to be located
+- id: 262
+  broad_category: Fill Error
+  category: Fill error
+  color: ''
+  regex: Problem filling
+- id: 263
+  broad_category: Nil Error
+  category: nil error
+  color: ''
+  regex: nil:NilClass
+- id: 264
+  broad_category: Timeout
+  category: Net::ReadTimeout
+  color: ''
+  regex: Net::ReadTimeout
+- id: 266
+  broad_category: Coding Error
+  category: undefined method
+  color: ''
+  regex: undefined method
+- id: 267
+  broad_category: Element Issue
+  category: Data element not on page
+  color: ''
+  regex: Element.*in data set does not exist on.*page
+- id: 268
+  broad_category: Page Issue / Timing
+  category: Click event would click a different element
+  color: ''
+  regex: .*Other element would receive the click.*
+- id: 269
+  broad_category: Grid Issue
+  category: Java connect exception
+  color: ''
+  regex: java.net.ConnectException
+- id: 270
+  broad_category: Grid Issue
+  category: Grid Exception
+  color: ''
+  regex: GridException
+- id: 272
+  broad_category: Connection Issue
+  category: Grid Issue
+  color: ''
+  regex: Failed to open TCP connection to.*:31133
+- id: 273
+  broad_category: Bad Data
+  category: Validation Issue
+  color: ''
+  regex: ERROR:.*of.*validation points failed!
+- id: 274
+  broad_category: Connection Issue
+  category: Splunk Issue
+  color: ''
+  regex: Failed to open TCP connection to.*:8088
+- id: 275
+  broad_category: Connection Issue
+  category: Network Issues
+  color: ''
+  regex: Timed out reading data from server
+- id: 276
+  broad_category: Browser
+  category: Chrome Issue
+  color: ''
+  regex: element not interactable.*
